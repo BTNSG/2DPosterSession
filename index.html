@@ -44,10 +44,10 @@
 				onerror();
 			} else if (UnityLoader.SystemInfo.mobile) {
 				document.getElementById("warningMobileBlock").style.display = "inherit";
-				onsuccess();
+				//onsuccess();
 			} else if (["Firefox", "Chrome", "Safari"].indexOf(UnityLoader.SystemInfo.browser) == -1) {
 				document.getElementById("warningBrowserBlock").style.display = "inherit";
-				onsuccess();
+				//onsuccess();
 			} else {
 				onsuccess();
 			}
@@ -113,7 +113,7 @@
 			</div>
 			<div id="warningMobileBlock" style="display:none;">
 				<div class="warningBrowserText">
-					Please note that Unity WebGL is not currently supported on mobiles.
+					Kindly visit this site on a desktop browser. Mobile app coming soon.
 				</div>
 			</div>
 			
@@ -122,7 +122,6 @@
 		<div id="errorBrowserBlock" style="display:none;">
 			<img class="logo" src="TemplateData/img/Logo.png"></img>
 			<span class="subtitle"> 2D Poster Session Demo <br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</span>
 			
 			<div id="errorContent">
